@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="J.Saraswathi's Portfolio - Web Developer & Designer">
+    <title>J.Saraswathi's Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    
+    <!-- Add CSS directly in head -->
+   
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="logo">
+            <h1>JS</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" class="nav-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#certificates" class="nav-link">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificates</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Wrap all sections in a main tag -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            
+            <!-- Add overlay to make text more readable -->
+            <div class="video-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="text-content">
+                    <h4 class="subtitle">Welcome To My Portfolio</h4>
+                    <h1 class="title">Hi, I'm <span class="highlight">J.Saraswathi</span></h1>
+                    <h2 class="profession">A <span class="typed-text"></span></h2>
+                    <p class="description">Passionate about creating beautiful and functional web experiences</p>
+                    <div class="cta-buttons">
+                        <div class="button-container">
+                            <a href="#certificates" class="btn btn-primary">
+                                <i class="fas fa-certificate"></i>
+                                View Certificates
+                            </a>
+                        </div>
+                        <div class="button-container">
+                            <a href="{{ url_for('static', filename='saraswathi.docx') }}" download="saraswathi_resume.docx" class="btn btn-primary">
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                        <div class="button-container">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/jsaraswathi2004" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/j-saraswathi-aa94a0290/" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Background Elements -->
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>BSc Data Science Student at KBN College </h3>
+                        <p>I am a dedicated Data Science student with a passion for technology and data analysis. Currently pursuing my Bachelor's degree, I have developed expertise in various technologies and completed several projects in the field.</p>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-code"></i>
+                                <h4>Technologies</h4>
+                                <p>3 Tech Stack</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-certificate"></i>
+                                <h4>Certificates</h4>
+                                <p>3 Certifications</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <h4>Projects</h4>
+                                <p>4 Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022-2025</div>
+                            <h3>Bachelor of Computer Science in Data Science</h3>
+                            <p class="timeline-institution">KBN College, Krishna University</p>
+                            <p class="timeline-description">
+                                Studying computer science fundamentals along with specialized courses in data science,
+                                including data analytics, statistical analysis, and machine learning.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>CGPA: 7.0/10.0</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020-2022</div>
+                            <h3>Intermediate Education (MPC)</h3>
+                            <p class="timeline-institution">KBN College</p>
+                            <p class="timeline-description">
+                                Completed intermediate education with Mathematics, Physics, and Chemistry as major subjects.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>CGPA: 56/100</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019-2020</div>
+                            <h3>Secondary School Education (SSC)</h3>
+                            <p class="timeline-institution">A K T P M C High School</p>
+                            <p class="timeline-description">
+                                Completed secondary education with strong foundation in core subjects.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>CGPA: 8.0/10.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>HTML/CSS</h3>
+                            <p>Advanced</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>RASA Framework</h3>
+                            <p>Intermediate</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>Flask</h3>
+                            <p>Intermediate</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>E-Commerce Website</h3>
+                            <p class="project-description">A responsive e-commerce website with product listings, shopping cart functionality, and user-friendly interface.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Application Form</h3>
+                            <p class="project-description">An interactive application form with form validation, dynamic fields, and responsive design.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Sports Bot</h3>
+                            <p class="project-description">An interactive chatbot for sports information using RASA framework with a user-friendly web interface.</p>
+                            <div class="project-tech">
+                                <span>RASA</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-content">
+                    <div class="button-container">
+                        <a href="static/resume/saraswathi_resume.pdf" download class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Python Programming</h3>
+                            <p class="issuer">GUVI</p>
+                            <p class="date">Issued: 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Machine Learning</h3>
+                            <p class="issuer">edX</p>
+                            <p class="date">Issued: 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>MS Office</h3>
+                            <p class="issuer">KBN College</p>
+                            <p class="date">Issued: 2023</p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Sports Bot Development</h3>
+                            <p class="issuer">PacketPrep</p>
+                            <p class="date">Issued: 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>jsaraswathi2004@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>+91 9247658386</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>J.Saraswathi</h3>
+                    <p>Web Developer & Designer</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/jsaraswathi2004" class="footer-social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/j-saraswathi-aa94a0290/" class="footer-social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 J.Saraswathi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
